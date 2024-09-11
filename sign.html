@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Tournament Sign-In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .sign-in-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #2b2b2b;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+        h1 {
+            text-align: center;
+            color: #FFD700;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #FFD700;
+            color: black;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #ffc700;
+        }
+    </style>
+</head>
+<body>
+    <div class="sign-in-form">
+        <h1>Sign In</h1>
+        <form action="/submit_signin" method="POST">
+            <label for="ffId">Free Fire ID</label>
+            <input type="text" id="ffId" name="ffId" placeholder="Enter your Free Fire ID" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <input type="submit" value="Sign In">
+        </form>
+    </div>
+</body>
+</html>
